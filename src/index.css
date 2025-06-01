@@ -1,0 +1,20 @@
+/* "Oswald" font familly */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+/* "Noto Sans" font familly */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* Inder font familly */
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+/* import tailwwind */
+@import "tailwindcss";
+
+@theme {
+
+  --font-Oswald: Oswald, "sans-serif";
+  --font-NotoSans: Noto Sans, "sans-serif";
+  --font-Inder: Inder, "sans-serif";
+
+  --color-light-gray: #C4C4C4;
+  --color-white: #fff9f9;
+  --color-light-green: #76de37;
+  --color-gray: #EBEBEB;
+}
