@@ -2,6 +2,7 @@
 import { TodoImg } from "./TodoImg";
 import { Form } from "./Form";
 import { SocialMediaIcons } from "./SocialMediaIcons";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
   return (
@@ -29,8 +30,11 @@ export const Login = () => {
 
           {/* Social Media Icons */}
           <SocialMediaIcons />
-          <p className="font-Inder mt-6 text-base font-medium text-black">
-            Don't have an account? <a href="#">Sign up</a>
+          <p className="font-Inder mt-6 text-[15px]  font-medium text-black">
+            Don't have an account?
+            <Link to="/signUpPage" className="hover:text-light-green pl-1">
+              Sign up
+            </Link>
           </p>
         </div>
       </div>

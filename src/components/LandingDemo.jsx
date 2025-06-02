@@ -22,8 +22,10 @@ export const LandingDemo = () => {
               responsibilities.
             </p>
             {/* Button */}
+            <Link to="/loginPage" >
             <Button context={"Get Started"}  />
-            <p className="text-center text-base font-normal mt-7">
+            </Link>
+            <p className="font-NotoSans text-center text-[15px] font-medium mt-7">
               Already have an account?{" "}
               <Link to="/loginPage" className="hover:text-light-green pl-px">
                 Sign In
