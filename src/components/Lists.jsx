@@ -33,9 +33,9 @@ export const Lists = () => {
           </article>
 
           {/* Add new  list */}
-          <article className="flex cursor-pointer items-center space-x-2.5 rounded-full px-1 py-1.5">
+          <article className="flex cursor-pointer items-center space-x-2.5 rounded-full px-1 py-1.5 hover:shadow-sm">
             <img src={plusIcon} alt="plusicon" className="w-[1rem]" />
-            <p className="font-NotoSans text-[ 13px] font-light text-black/70">
+            <p className="font-NotoSans text-[ 13px] font-light text-black/70 ">
               Add new list
             </p>
           </article>

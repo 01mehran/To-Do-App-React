@@ -11,7 +11,7 @@ import { Lists } from "./Lists";
 
 export const Menu = () => {
   return (
-    <div className="bg-smoky-gray m-4 h-[95vh] w-full max-w-[350px] rounded-[50px] px-10 py-6">
+    <div className="bg-smoky-gray h-[95vh] w-full max-w-[350px] rounded-[50px] px-10 py-6">
       {/* Header */}
       <header className="flex items-center justify-between">
         <h1 className="font-Oswald text-4xl font-semibold">Menu</h1>
@@ -42,13 +42,13 @@ export const Menu = () => {
       {/* footer */}
       <footer className="mt-5">
         <div className="flex flex-col gap-2">
-          <article className="flex cursor-pointer items-center space-x-4">
-            <img src={settingIcon} alt="settingIcon" />
-            <p className="font-NotoSans text-lg text-black/70">Settings</p>
+          <article className="flex cursor-pointer items-center space-x-4 group">
+            <img src={settingIcon} alt="settingIcon" className="group-hover:bg-green group-hover:p-1 transition-all duration-300 rounded-full"/>
+            <p className="font-NotoSans text-lg text-black/70 group-hover:text-green">Settings</p>
           </article>
-          <article className="flex cursor-pointer items-center space-x-4">
-            <img src={LogoutIcon} alt="settingIcon" />
-            <p className="font-NotoSans text-lg text-black/70">Log Out</p>
+          <article className="flex cursor-pointer items-center space-x-4 group">
+            <img src={LogoutIcon} alt="settingIcon" className="group-hover:bg-red group-hover:p-1 transition-all duration-300 rounded-full" />
+            <p className="font-NotoSans text-lg text-black/70 group-hover:text-red">Log Out</p>
           </article>
         </div>
       </footer>
