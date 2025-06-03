@@ -1,11 +1,24 @@
 import React from "react";
+// EyeIcons;
+import { FaRegEyeSlash } from "react-icons/fa6";
+import eyeIcon from "@/assets/icons/eye_icon.svg";
+
+// Components
 import { TodoImg } from "./TodoImg";
 import { Input } from "./Input";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
-import eyeIcon from "@/assets/icons/eye_icon.svg";
+
+// State;
+import { useState } from "react";
 
 export const Register = () => {
+  const [show, setShow] = useState(false);
+
+  const showHandler = () => {
+    setShow(!show);
+  };
+
   return (
     <div className="bg-light-gray min-h-screen">
       <div className="flex flex-col-reverse items-center justify-center gap-5 px-3 pt-10 md:flex-row">
@@ -23,11 +36,13 @@ export const Register = () => {
             <Input placeholder={"E-mail address"} type={"text"} />
             <div className="focus-within:ring-light-green flex items-center rounded-[7px] border border-black/60 px-2 py-1 focus-within:border-transparent focus-within:ring-2">
               <input
-                type="password"
+                type={show ? "text" : "password"}
                 placeholder="password"
                 className="accent-light-green w-full border-0 outline-0"
               />
-              <img src={eyeIcon} alt="eyeIcon" className="cursor-pointer" />
+              <p className="cursor-pointer" onClick={showHandler}>
+                {show ? <img src={eyeIcon} alt="eyeIcon" /> : <FaRegEyeSlash />}
+              </p>
             </div>
             <Input placeholder={"Re-enter the password"} type={"password"} />
           </section>
