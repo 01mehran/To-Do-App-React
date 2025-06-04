@@ -23,3 +23,11 @@
   --color-green: #61FF00;
   --color-blue: #5D7DF0;
 }
+
+/* styles.css */
+
+::-webkit-scrollbar {
+  width: 0px; 
+  background-color: transparent
+}
+
