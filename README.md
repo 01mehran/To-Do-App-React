@@ -1,12 +1,39 @@
-# React + Vite
+# To-Do App with React Js & Tailwind Css
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![to-do app](./public/output.png)
 
-Currently, two official plugins are available:
+This to-do application built with React and Tailwind CSS, designed to help you organize your daily tasks efficiently.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **User Authentication**
+  - Secure login/signup flow🔓
+  - Logout functionality
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Task Management**
+  - Today's tasks view vi
+  - Add/edit/delete tasks📑
+  - View tasks with dates📅
+
+
+
+## Technologies Used
+1. React.js (Frontend framework)co
+2. Tailwind CSS (Styling)
+3. React Router (Navigation)
+
+## Future Enhancements
+- Dark mode toggleto
+- Mobile app version
+
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your improvements.
+
+## Live Demo 
+Check out the live version: [To-Do App]()
+
+## Contact
+
+For support or inquiries:  
+Email: [mehranmohamadi1311@gmail.com](mailto:your.email@example.com)  
+Instagram_Id : mehran_7_10
