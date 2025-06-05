@@ -42,7 +42,7 @@ export const Tasks = () => {
             <div className="flex items-center gap-1.5">
               <img src={CalendarIcon} alt="CalendarIcon" className="w-5" />
               <span className="font-NotoSans text-sm font-medium text-black/70">
-                Calendar
+                <Link to="/calendarPage">Calendar</Link>  
               </span>
             </div>
           </article>

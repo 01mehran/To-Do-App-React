@@ -5,6 +5,7 @@ import { SignUpPage } from "./Pages/SignUpPage";
 import { Home } from "./Pages/Home";
 import { UpcomingPage } from "./Pages/UpcomingPage";
 import { TodayPage } from "./Pages/TodayPage";
+import { Calendarpage } from "./Pages/Calendarpage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/upCommingPage" element={<UpcomingPage />} />
         <Route path="todayPage" element={<TodayPage />} />
+        <Route path="calendarPage" element={<Calendarpage />} />
       </Routes>
     </Router>
   );
