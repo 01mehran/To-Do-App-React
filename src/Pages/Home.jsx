@@ -1,5 +1,4 @@
 import { Menu } from "../components/Menu";
-import { Button } from "../components/Button";
 export const Home = () => {
   return (
     <div className="flex gap-6 px-5 py-4">

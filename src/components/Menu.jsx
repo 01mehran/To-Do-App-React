@@ -9,12 +9,16 @@ import LogoutIcon from "@/assets/icons/logoutIcon.svg";
 import { Tasks } from "./Tasks";
 import { Lists } from "./Lists";
 
+import { Link } from "react-router-dom";
+
 export const Menu = () => {
   return (
-    <div className="bg-smoky-gray h-[95vh] w-full max-w-[350px] rounded-[50px] px-10 py-6">
+    <div className="bg-smoky-gray sticky top-4 h-[95vh] w-full max-w-[350px] rounded-[50px] px-10 py-6">
       {/* Header */}
       <header className="flex items-center justify-between">
-        <h1 className="font-Oswald text-4xl font-semibold">Menu</h1>
+        <h1 className="font-Oswald text-4xl font-semibold">
+         <Link to="/home">Menu</Link>
+          </h1>
         <div className="flex h-6 w-6 cursor-pointer flex-col items-center justify-evenly">
           <span className="h-[3px] w-full rounded-[2px] bg-black"></span>
           <span className="h-[3px] w-full rounded-[2px] bg-black"></span>

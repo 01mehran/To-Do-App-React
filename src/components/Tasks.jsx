@@ -3,6 +3,7 @@ import upComingIcon from "@/assets/icons/UpcomIcon.svg";
 import ListIcon from "@/assets/icons/listIcon.svg";
 import CalendarIcon from "@/assets/icons/calendaricon.svg";
 import NoteIcon from "@/assets/icons/NoteIcon.svg";
+import { Link } from "react-router-dom";
 
 export const Tasks = () => {
   return (
@@ -15,7 +16,7 @@ export const Tasks = () => {
             <div className="flex items-center gap-1.5">
               <img src={upComingIcon} alt="upComingIcon" className="w-5" />
               <span className="font-NotoSans text-sm font-medium text-black/70">
-                Upcoming
+                <Link to="/upcommingPage">Upcoming</Link> 
               </span>
             </div>
             <span className="bg-gray text font-NotoSans w-7 rounded-full text-center text-[11px] text-black/70">
