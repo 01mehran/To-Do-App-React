@@ -4,6 +4,7 @@ import { LoginPage } from "./Pages/Loginpage";
 import { SignUpPage } from "./Pages/SignUpPage";
 import { Home } from "./Pages/Home";
 import { UpcomingPage } from "./Pages/UpcomingPage";
+import { TodayPage } from "./Pages/TodayPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/signupPage" element={<SignUpPage />} />
         <Route path="/home" element={<Home />} />
         <Route path="/upCommingPage" element={<UpcomingPage />} />
+        <Route path="todayPage" element={<TodayPage />} />
       </Routes>
     </Router>
   );

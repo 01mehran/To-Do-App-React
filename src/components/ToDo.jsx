@@ -1,7 +1,7 @@
 import plusIcon from "@/assets/icons/plusIcon.svg";
 import { ToDoList } from "@/components/ToDoList";
 
-export const ToDo = ({ context, num, Today }) => {
+export const ToDo = ({ context, num, Today, height= "" }) => {
   return (
     <div className="w-full overflow-hidden">
       {(context || num) && (
@@ -12,7 +12,7 @@ export const ToDo = ({ context, num, Today }) => {
           </span>
         </header>
       )}
-      <main className="border-light-gray mt-5 h-[280px] overflow-y-scroll rounded-4xl border-[1px] px-11 pb-3.5">
+      <main className={`border-light-gray mt-5 h-[280px] overflow-y-scroll rounded-4xl border-[1px] px-11 pb-3.5 ${height}`}>
         <div className="sticky top-0 w-full bg-[#ffffff] pt-3.5">
           <h3 className="font-Oswald text-4xl font-normal">{Today}</h3>
           <article className="border-light-gray mt-5 flex h-10 items-center gap-2 rounded-[12px] border-[1px] px-2">

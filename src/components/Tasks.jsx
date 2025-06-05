@@ -29,7 +29,7 @@ export const Tasks = () => {
             <div className="flex items-center gap-1.5">
               <img src={ListIcon} alt="ListIcon" className="w-5" />
               <span className="font-NotoSans text-sm font-medium text-black/70">
-                Today
+              <Link to="/todaypage">Today</Link>  
               </span>
             </div>
             <span className="bg-gray text font-NotoSans w-7 rounded-full text-center text-[11px] text-black/70">
