@@ -19,9 +19,11 @@
   --color-gray: #EBEBEB;
   --color-smoky-gray: #F4F4F4;
   --color-grey: #D9D9D933;
-   --color-red: #FF0000;
+  --color-red: #FF0000;
   --color-green: #61FF00;
   --color-blue: #5D7DF0;
+  --color-dark-gray: #DDDDDD;
+  --color-dark: #C6C6C6
 }
 
 /* styles.css */
