@@ -6,6 +6,7 @@ import { Home } from "./Pages/Home";
 import { UpcomingPage } from "./Pages/UpcomingPage";
 import { TodayPage } from "./Pages/TodayPage";
 import { Calendarpage } from "./Pages/Calendarpage";
+import { NotFoundPage } from "./Pages/NotFoundPage";
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
         <Route path="/loginPage" element={<LoginPage />} />
         <Route path="/signupPage" element={<SignUpPage />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/upCommingPage" element={<UpcomingPage />} />
-        <Route path="todayPage" element={<TodayPage />} />
-        <Route path="calendarPage" element={<Calendarpage />} />
+        <Route path="/upComingPage" element={<UpcomingPage />} />
+        <Route path="/todayPage" element={<TodayPage />} />
+        <Route path="/calendarPage" element={<Calendarpage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );
