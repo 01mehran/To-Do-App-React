@@ -1,11 +1,11 @@
-import React from "react";
 import upComingIcon from "@/assets/icons/UpcomIcon.svg";
 import ListIcon from "@/assets/icons/listIcon.svg";
 import CalendarIcon from "@/assets/icons/calendaricon.svg";
 import NoteIcon from "@/assets/icons/NoteIcon.svg";
 import { Link } from "react-router-dom";
 
-export const Tasks = () => {
+export const Tasks = ({isOpen}) => {
+  
   return (
     <section className="mt-6">
       <div>
@@ -16,10 +16,10 @@ export const Tasks = () => {
             <div className="flex items-center gap-1.5">
               <img src={upComingIcon} alt="upComingIcon" className="w-5" />
               <span className="font-NotoSans text-sm font-medium text-black/70">
-                <Link to="/upcommingPage">Upcoming</Link> 
+                <Link to="/upcomingPage">Upcoming</Link> 
               </span>
             </div>
-            <span className="bg-gray text font-NotoSans w-7 rounded-full text-center text-[11px] text-black/70">
+            <span className={`bg-gray text font-NotoSans w-7 rounded-full text-center text-[11px] text-black/70 ${isOpen ? "" : "hidden"}`}>
               15+
             </span>
           </article>
@@ -32,7 +32,7 @@ export const Tasks = () => {
               <Link to="/todaypage">Today</Link>  
               </span>
             </div>
-            <span className="bg-gray text font-NotoSans w-7 rounded-full text-center text-[11px] text-black/70">
+            <span className={`bg-gray text font-NotoSans w-7 rounded-full text-center text-[11px] text-black/70 ${isOpen ? "" : "hidden"}`}>
               8
             </span>
           </article>
@@ -51,7 +51,7 @@ export const Tasks = () => {
           <article className="cursor-pointer transition-all duration-300 hover:px-1">
             <div className="flex items-center gap-1.5">
               <img src={NoteIcon} alt="NoteIcon" className="w-4" />
-              <span className="font-NotoSans pl-1 text-sm font-medium text-black/70">
+              <span className="font-NotoSans pl-1 text-sm font-medium text-black/70 text-nowrap">
                 Sticky Wall
               </span>
             </div>
